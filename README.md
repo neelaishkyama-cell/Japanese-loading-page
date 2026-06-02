@@ -1,1 +1,1 @@
-# Japanese-loading-page
+LOGIN PAGE
