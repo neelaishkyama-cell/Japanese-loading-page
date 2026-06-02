@@ -3,139 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ===== TITLE ===== -->
-    <title>Document</title>
-
-    <!-- ===== CSS LINK ===== -->
+    <title>Login Form | CodeByGaurav</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- ===== REMIX ICONS ===== -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-
-    <!-- ===== AOS ANIMATION LIBRARY ===== -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- ===== GOOGLE FONTS ===== -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-
-
 <body>
+    <form action="" class="login-form">
+        <h1 class="login-title">Login</h1>
 
-    <!-- ===== HEADER ===== -->
-    
-    <header data-aos="fade-down" data-aos-duration="800">
-      <div class="logo">
-        <img src="images/logo.png" alt="Logo">
-      </div>
-
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Blog</a>
-        <a href="#">News</a>
-        <i class="ri-menu-3-line menu-icon" id="menuBtn" aria-label="Menu"></i>
-      </nav>
-    </header>
-     
-    <!-- ===== SIDE MENU ===== -->
-    
-    <div class="side-menu" id="sideMenu">
-      <i class="ri-close-large-line close-icon" id="closeBtn"></i>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Blog</a>
-        <a href="#">News</a> 
-      </nav>
-
-      <div class="side-floating">
-        <div class="icon"><i class="ri-search-line"></i></div>
-        <div class="icon"><i class="ri-book-line"></i></div>
-        <div class="icon"><i class="ri-user-line"></i></div>
-        <div class="icon"><i class="ri-chat-1-line"></i></div>
-      </div>
-    </div>
-
-    <!-- ===== HERO SECTION ===== -->
-
-    <section class="hero">
-      <!-- Left -->
-      <div class="hero-left">
-        <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">Welcome <br> to Japan</h1>
-        <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas consectetur provident ipsum aliquid quas qui optio pariatur inventore in suscipit.</p>
-
-        <div class="preview" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
-          <button class="play-btn" aria-label="Play video">
-            <i class="ri-play-fill"></i>
-          </button>
-
-          <div>
-            <div class="date">02/07/2019</div>
-            <div class="meta">Highlights — Culture Festival</div>
-          </div>
+        <div class="input-box">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="input-box">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password">
         </div>
 
-        <div class="socials" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-          <div class="socials-icons"><i class="ri-facebook-line"></i></div>
-          <div class="socials-icons"><i class="ri-vk-line"></i></div>
-          <div class="socials-icons"><i class="ri-youtube-line"></i></div>
-        </div>
-      </div>
-
-      <!-- CENTER -->
-      <div class="hero-center">
-        <div class="red-sun" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400"></div>
-        <img src="images/girl.png" alt="" class="hero-img" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="900">
-      </div>
-
-      <!-- RIGHT -->
-      <div class="hero-right">
-        <div class="floating-menu" data-aos="fade-left" data-aos-duration="800" data-aos-delay="600">
-          <div class="icon"><i class="ri-search-line"></i></div>
-          <div class="icon"><i class="ri-book-line"></i></div>
-          <div class="icon"><i class="ri-user-line"></i></div>
-          <div class="icon"><i class="ri-chat-1-line"></i></div>
+        <div class="remember-forgot-box">
+            <label for="remember">
+                <input type="checkbox" id="remember">
+                Remember me
+            </label>
+            <a href="#">Forgot Password</a>
         </div>
 
-        <img src="images/cherry.png" class="cherry" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
-      </div>
-
-    </section>
-     
-      
-       
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- ===== JS LINK ===== -->
-    <script src="script.js"></script>
-
-    <!-- ===== AOS INITIALIZATION ===== -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-          duration: 1200,
-          once: true
-      });
-    </script>
+        <button class="login-btn">Login</button>
+        <p class="register">
+            Don't have an account?
+            <a href="#">Register</a>
+        </p>
+    </form>
 </body>
 </html>
